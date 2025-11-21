@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<button id="themeToggle">🌙</button>
+
+<div id="clock"></div>
+
+<div class="container">
+
+    <h1>To-Do List</h1>
+
+  <br>
+
+  <br>
+    <!-- Task Counters -->
+
+    <div class="task-stats">
+
+        <p>Total: <span id="totalCount">0</span></p>
+
+        <p>Completed: <span id="completedCount">0</span></p>
+
+        <p>Remaining: <span id="remainingCount">0</span></p>
+    </div>
+   <br>
+
+  <br>
+    <div class="task-input">
+        <input type="text" id="taskInput" placeholder="Enter a task...">
+        <select id="prioritySelect">
+            <option value="low">Low</option>
+            <option value="medium">Medium</option>
+            <option value="high">High</option>
+        </select>
+        <button id="addTaskBtn">Add</button>
+    </div>
+    <input type="text" id="searchInput" placeholder="Search tasks...">
+    <select id="filterSelect">
+        <option value="all">All</option>
+        <option value="low">Low Priority</option>
+        <option value="medium">Medium Priority</option>
+        <option value="high">High Priority</option>
+        <option value="completed">Completed</option>
+    </select>
+    <ul id="taskList"></ul>
+</div>
+<button id="scrollTopBtn">⬆</button>
+<script src="script.js"></script>
+</body>
+</html>
